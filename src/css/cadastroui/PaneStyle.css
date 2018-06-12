@@ -1,0 +1,8 @@
+.pane-fundo {
+    -fx-alignment: center;
+    -fx-padding: 40;
+    -fx-vgap: 20;
+
+    -fx-background-image: url("/images/cadastro-bg.jpg");
+    -fx-background-size: cover;
+}

@@ -1,0 +1,38 @@
+@font-face {
+    font-family: "Condiment";
+    src: url("/fonts/Condiment-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Covered By Your Grace";
+    src: url("/fonts/CoveredByYourGrace.ttf");
+}
+
+@font-face {
+    font-family: "Niconne";
+    src: url("/fonts/Niconne-Regular.ttf");
+}
+
+.label { /* Usado para os nomes dos jogadores */
+    -fx-font: normal normal 50px "Niconne";
+    -fx-text-fill: rgb(0, 0, 0);
+}
+
+.label-titulo {
+    -fx-font: normal bold 90px "Condiment";
+    -fx-text-fill: rgb(0, 0, 0);
+
+    -fx-padding: -25 23 10 15;
+    -fx-background-color: rgba(255, 255, 255, .5);
+    -fx-background-radius: 100;
+
+    -fx-border-color: rgb(0,0,0);
+    -fx-border-radius: 100;
+    -fx-border-style: solid;
+    -fx-border-width: 3px;
+}
+
+.label-vs {
+    -fx-font: normal bold 70px "Covered By Your Grace";
+    -fx-text-fill: rgb(255, 0, 0);
+}

@@ -1,0 +1,18 @@
+@font-face {
+    font-family: "Covered By Your Grace";
+    src: url("/fonts/CoveredByYourGrace.ttf");
+}
+
+@font-face {
+    font-family: "Condiment";
+    src: url("/fonts/Condiment-Regular.ttf");
+}
+
+.label {
+    -fx-font: normal normal 40px "Covered By Your Grace";
+    -fx-text-fill: rgb(0, 0, 0);
+}
+
+.label-titulo {
+    -fx-font: normal bold 80px "Condiment";
+}

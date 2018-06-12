@@ -1,0 +1,23 @@
+@font-face {
+    font-family: "Niconne";
+    src: url("/fonts/Niconne-Regular.ttf");
+}
+
+.text-field {
+    -fx-font: normal normal 35px "Niconne";
+    -fx-text-fill: rgb(0, 0, 0);
+    -fx-padding: 0 15;
+
+    -fx-background-color: rgb(255, 255, 255);
+    -fx-background-radius: 20;
+
+    -fx-border-color: rgb(0,0,0);
+    -fx-border-radius: 20;
+    -fx-border-style: solid;
+    -fx-border-width: 2px;
+}
+
+.text-field:focused {
+    -fx-background-color: rgb(200, 255, 255);
+    -fx-border-color: rgb(0,200,255);
+}
