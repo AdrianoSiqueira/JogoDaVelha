@@ -30,15 +30,9 @@ public class CadastroUI extends Application {
                     jogadores[0].setNome(nome1);
                     jogadores[1].setNome(nome2);
                     stage.close();
-                } else {
-                    new Mensagem(Alert.AlertType.WARNING, "Cadastro", "Alerta", "Os nomes devem ser diferentes.").show();
-                }
-            } else {
-                new Mensagem(Alert.AlertType.WARNING, "Cadastro", "Alerta", "Informe o nome do segundo jogador.").show();
-            }
-        } else {
-            new Mensagem(Alert.AlertType.WARNING, "Cadastro", "Alerta", "Informe o nome do primeiro jogador.").show();
-        }
+                } else new Mensagem(Alert.AlertType.WARNING, "Cadastro", "Alerta", "Os nomes devem ser diferentes.").show();
+            } else new Mensagem(Alert.AlertType.WARNING, "Cadastro", "Alerta", "Informe o nome do segundo jogador.").show();
+        } else new Mensagem(Alert.AlertType.WARNING, "Cadastro", "Alerta", "Informe o nome do primeiro jogador.").show();
     }
 
     @Override
@@ -55,16 +49,12 @@ public class CadastroUI extends Application {
                 fieldNome2 = new TextField();
 
         fieldNome1.textProperty().addListener((observable, oldValue, newValue) -> {
-            if (newValue.length() > 20) {
-                fieldNome1.setText(oldValue);
-            }
+            if (newValue.length() > 20) fieldNome1.setText(oldValue);
         });
         fieldNome1.setOnAction(event -> cadastrar(fieldNome1.getText(), fieldNome2.getText()));
 
         fieldNome2.textProperty().addListener((observable, oldValue, newValue) -> {
-            if (newValue.length() > 20) {
-                fieldNome2.setText(oldValue);
-            }
+            if (newValue.length() > 20) fieldNome2.setText(oldValue);
         });
         fieldNome2.setOnAction(event -> cadastrar(fieldNome1.getText(), fieldNome2.getText()));
 
