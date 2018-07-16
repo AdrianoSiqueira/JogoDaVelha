@@ -31,9 +31,7 @@ public class AppUI extends Application {
 
         // Encerra o jogo quando houver um vencedor, ou quando esgotarem as jogadas
         int vencedor = app.verificarVencedor();
-        if (vencedor >= 0 || app.getJogadas() == 9) {
-            app.encerrar(vencedor);
-        }
+        if (vencedor >= 0 || app.getJogadas() == 9) app.encerrar(vencedor);
     }
 
     @Override
